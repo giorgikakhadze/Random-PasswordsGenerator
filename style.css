@@ -68,3 +68,9 @@ p{
      margin: 20px 20px 0px 20px;
 font-size: 20px;
 }
+.unCorectText-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

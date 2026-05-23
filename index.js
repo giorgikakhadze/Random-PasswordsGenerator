@@ -68,14 +68,13 @@ submitButton.addEventListener("click", () => {
         alert("success");
     } else {
         alert("incorrect");
-        let resultHTML = "";
+       let resultHTML = "";
 
-        for (let i = 0; i < text.length; i++) {
-           
-            if (userValue.includes(text[i])) {
-                resultHTML += `<span style="color: green;">${text[i]}</span>`;
+        for (let i = 0; i < userValue.length; i++) {
+            if (!text.includes(userValue[i])) {
+                resultHTML += `<span style="color: red;">${userValue[i]}</span>`;
             } else {
-                resultHTML += `<span style="color: black;">${text[i]}</span>`;
+                resultHTML += `<span style="color: black;">${userValue[i]}</span>`;
             }
         }
 
